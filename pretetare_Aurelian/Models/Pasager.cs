@@ -6,7 +6,7 @@ namespace pretetare_Aurelian.Models
 {
     public class Pasager
     {
-        public string IDPasager { get; set; }
+        public string ID { get; set; }
         public string Nume { get; set; }
         public string Prenume { get; set; }
         public string Telefon { get; set; }

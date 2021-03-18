@@ -17,8 +17,8 @@
                     Height="220"
                     Width="800">
             <Label Content="Pasageri"/>
-            <Button x:Name="Add">Add</Button>
-            <Button x:Name="Remove">Remove</Button>
+            <Button x:Name="Add" Click="AddPasager_Click">Add</Button>
+            <Button x:Name="Remove" Click="RemovePasager_Click">Remove</Button>
             <ScrollViewer Height="200">
                 <DataGrid ItemsSource="{Binding Pasager}">
                     <DataGrid.Columns>
@@ -35,8 +35,8 @@
                     Height="220"
                     Width="800">
             <Label Content="Rute"/>
-            <Button x:Name="Ad">Add</Button>
-            <Button x:Name="Remov">Remove</Button>
+            <Button x:Name="Ad" Click="AddRuta_Click">Add</Button>
+            <Button x:Name="Remov" Click="Remove_Click">Remove</Button>
             <ScrollViewer Height="200">
                 <DataGrid ItemsSource="{Binding Pasager}">
                     <DataGrid.Columns>

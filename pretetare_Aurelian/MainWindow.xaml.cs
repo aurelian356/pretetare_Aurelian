@@ -13,6 +13,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 using pretetare_Aurelian.Models;
+using System.IO;
 
 
 
@@ -45,14 +46,33 @@ namespace pretetare_Aurelian
                 dbContext.Pasageri.AddRange(
                     new Pasager
                     {
-                        IDPasager = Guid.NewGuid().ToString(),
+                        ID = Guid.NewGuid().ToString(),
                         Nume = "Stanislav",
                         Prenume = "Oancea",
                         Telefon = "09878765"
                     });
                 dbContext.SaveChanges();
+                
 
             }
+        }
+
+        private void AddPasager_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void RemovePasager_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void AddRuta_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void RemoveRuta_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
